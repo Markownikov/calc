@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(160deg, #0765f1 , #008b18);
+
+}
+
+.display{
+    height: 70px;
+    width: 300px;
+    text-align: right;
+    display: grid;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: rgba(161, 122, 122, 0.767);
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    box-shadow: inset black 5px 5px 10px 2px;
+
+}
+
+.btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    width: 300px;
+    height: 300px;
+}
+
+.btn button{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    border: 1px solid grey;
+    outline: none;
+    background-color: rgba(20, 19, 19, 0.925);
+    border-radius: 10px;
+    box-shadow: inset rgba(49, 46, 46, 0.575) 2px 2px 5px 2px;
+
+}
+.numbers , .operator{
+    color: white;
+   
+}
+.del{
+    color: orange;
+}
+.btn button:active , .btn button:hover{
+    background-color: green;
+}
+.span-two{
+    grid-column : span 2;
+    color: orange;
+}
